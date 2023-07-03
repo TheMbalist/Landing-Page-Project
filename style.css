@@ -1,0 +1,61 @@
+:root{ /*main colours used in the project*/
+
+    /* Colours Used*/
+    --main-colour: #ffffff;
+    --secondary-colour-1: #1F2937;
+    --secondary-colour-2: #E5E7EB;
+    --accent-colour: #3882F6;
+
+    --main-text-colour: #F9FAF8;
+    --secondary-text-colour: #E5E7EB;
+
+    --font-family: 'Roboto', sans-serif;
+
+
+}
+
+/*Header*/
+body{
+    margin:0;
+    padding: 0;
+}
+
+header{
+    background-color: var(--secondary-colour-1);
+}
+
+
+ul{
+  
+   display: flex;
+   flex-direction: row;
+   padding: 0;
+   font-family: 'Roboto', sans-serif;
+   color: var(--main-text-colour);
+   font-weight: normal;
+   
+}
+
+
+li{
+    list-style: none;
+}
+
+.website-name{
+    padding-left: 20px;
+    margin-right: 450px;
+    font-weight: 700;
+}
+
+li:not(:first-child){
+    margin-right: 50px;
+}
+
+li:hover:not(:first-child){
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.website-name:hover{
+    cursor: pointer;
+}
