@@ -117,7 +117,7 @@ li:hover:not(:first-child){
 /* Popular Dishes Section */
 .popular-dishes-section h2{
     font-size: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     text-align: center;
     letter-spacing: 1.5px;
 }
@@ -152,3 +152,28 @@ li:hover:not(:first-child){
     padding-bottom: 50px;
 }
 
+
+/* Tesimonial Section*/
+.testimonial-section{
+    background-color: var(--secondary-colour-2);
+    
+}
+
+.testimonial-section p{
+    font-style: italic;
+    font-weight: 400;
+    padding-top: 80px;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
+
+}
+
+.testimonial-section h5{
+    padding-bottom: 60px;
+    text-align: right;
+    padding-right: 100px;
+    font-size: 20px;
+    letter-spacing: 1px;
+   
+}
