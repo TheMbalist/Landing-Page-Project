@@ -15,6 +15,9 @@
 }
 
 /*Header*/
+*{
+    font-family: 'Roboto', sans-serif;
+}
 body{
     margin:0;
     padding: 0;
@@ -30,7 +33,6 @@ ul{
    display: flex;
    flex-direction: row;
    padding: 0;
-   font-family: 'Roboto', sans-serif;
    color: var(--main-text-colour);
    font-weight: normal;
    margin-bottom: 50px;
@@ -44,13 +46,13 @@ li{
 }
 
 .website-name{
-    padding-left: 20px;
-    margin-right: 450px;
+    padding-left: 10px;
+    margin-right: 400px;
     font-weight: 700;
 }
 
 li:not(:first-child){
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 li:hover:not(:first-child){
@@ -69,12 +71,13 @@ li:hover:not(:first-child){
 .hero-text{
     color: var(--main-colour);
     padding-left: 10px;
-    font-family: 'Roboto', sans-serif;
+    
 }
 
 .hero-text h3{
     padding-bottom: 0px;
     margin-bottom: 0px;
+    font-size: 30px;
 }
 
 .hero-text p{
@@ -104,7 +107,48 @@ li:hover:not(:first-child){
 .hero-image-div img{
     width: 400px;
     height: 200px;
-    margin-left: 30px;
+    margin-left: 50px;
+    padding-top: 20px;
     padding-bottom: 60px;
 
+
 }
+
+/* Popular Dishes Section */
+.popular-dishes-section h2{
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.popular-dishes {
+    display: flex;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+.popular-dishes img{
+    height: 200px;
+    width: 200px;
+    border-radius: 3px;
+}
+
+.popular-dishes p{
+    padding-top: 0px;
+    margin-top: 0px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.dish{
+    padding-left: 30px;
+    
+}
+
+.seafood-source p{
+    font-style: italic;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
