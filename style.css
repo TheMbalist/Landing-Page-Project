@@ -18,13 +18,25 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
+
+a{
+    text-decoration: none;
+    color: var(--main-text-colour);
+}
+
 body{
-    margin:0;
-    padding: 0;
+    margin:0px;
+    padding: 0px;
+    
 }
 
 header{
     background-color: var(--secondary-colour-1);
+}
+
+p{
+    font-style: italic;
+    font-weight: 400;
 }
 
 
@@ -35,8 +47,7 @@ ul{
    padding: 0;
    color: var(--main-text-colour);
    font-weight: normal;
-   margin-bottom: 50px;
-   padding-top: 10px;
+   padding-top: 5px;
    
 }
 
@@ -55,6 +66,10 @@ li:not(:first-child){
     margin-right: 40px;
 }
 
+li:nth-child(2){
+    margin-left: 500px;
+}
+
 li:hover:not(:first-child){
     text-decoration: underline;
     cursor: pointer;
@@ -66,11 +81,12 @@ li:hover:not(:first-child){
 
 .hero{
     display: flex;
+    padding-top: 50px;
 }
 
 .hero-text{
     color: var(--main-colour);
-    padding-left: 10px;
+    padding-left: 80px;
     
 }
 
@@ -84,7 +100,7 @@ li:hover:not(:first-child){
     margin-top: 0px;
     padding-top: 0px;
     width: 300px;
-    font-style: italic;
+     font-style: italic;
     font-weight: 400;
 
 }
@@ -94,7 +110,7 @@ li:hover:not(:first-child){
     color: var(--main-colour);
     background-color: var(--accent-colour);
     border: none;
-    padding: 5px 15px;
+    padding: 4px 20px;
 }
 
 
@@ -107,7 +123,7 @@ li:hover:not(:first-child){
 .hero-image-div img{
     width: 400px;
     height: 200px;
-    margin-left: 50px;
+    margin-left: 80px;
     padding-top: 20px;
     padding-bottom: 60px;
 
@@ -115,57 +131,77 @@ li:hover:not(:first-child){
 }
 
 /* Popular Dishes Section */
+.popular-dishes-section{
+    background-color: var(--main-colour);
+}
+
 .popular-dishes-section h2{
     font-size: 30px;
     margin-bottom: 60px;
     text-align: center;
     letter-spacing: 1.5px;
+    color: var(--secondary-colour-1);
+    padding-top: 30px;
+    
 }
 
 .popular-dishes {
     display: flex;
     padding-bottom: 20px;
-    padding-left: 30px;
+    padding-left: 300px;
+    
 }
+
 
 .popular-dishes img{
     height: 200px;
     width: 200px;
     border-radius: 3px;
+   
 }
+
+/* animation source: https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
+.dish{
+    padding-left: 30px;
+    transition: transform .2s; /* sets the duration of the animation*/
+}
+
+.dish:hover{
+    transform: scale(1.5); /* zooms in the imagess by 100% when you hover over them*/
+}
+
 
 .popular-dishes p{
     padding-top: 0px;
     margin-top: 0px;
-    font-style: italic;
+     font-style: italic;
     font-weight: 400;
-}
-
-.dish{
-    padding-left: 30px;
-    
+    color: var(--secondary-colour-1);
 }
 
 .seafood-source p{
-    font-style: italic;
+     font-style: italic;
     font-weight: 400;
-    padding-bottom: 50px;
+   padding-bottom: 0px;
+   margin-bottom: 0px;
 }
 
 
 /* Tesimonial Section*/
 .testimonial-section{
     background-color: var(--secondary-colour-2);
-    
+    padding-top: 0px;
+    margin-top: 0px;
 }
 
 .testimonial-section p{
-    font-style: italic;
+     font-style: italic;
     font-weight: 400;
     padding-top: 80px;
-    font-size: 30px;
+    font-size: 25px;
     padding-left: 30px;
     padding-right: 20px;
+    color: var(--secondary-colour-1);
 
 }
 
@@ -176,4 +212,59 @@ li:hover:not(:first-child){
     font-size: 20px;
     letter-spacing: 1px;
    
+}
+
+
+/* Sign Up Section*/
+.signup-section{
+    background-color: var(--main-colour);
+}
+.sign-up{
+    background-color: var(--accent-colour);
+    color: var(--main-colour);
+    border-radius: 5px;
+    width: 70%;
+    margin-top: 70px;
+    margin-left: 150px;
+    margin-bottom: 70px;
+    display: flex;
+}
+.sign-up-text h4{
+    margin-bottom: 0px;
+    padding-bottom: 3px;
+}
+.sign-up-text p{
+     font-style: italic;
+    font-weight: 400;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.sign-up-text{
+    padding-left: 80px;
+}
+
+.signup-button button{
+    background-color: var(--accent-colour);
+    border: 1.5px solid var(--main-colour);
+    border-radius: 5px;
+    margin-left: 600px;
+    margin-top: 30px;
+    padding: 4px 25px;
+    color: var(--main-text-colour);
+}
+
+.signup-button button:hover{
+    background-color: var(--main-text-colour);
+    color: var(--accent-colour);
+    cursor: pointer;
+}
+
+/* Footer*/
+footer{
+    background-color: var(--secondary-colour-1);
+    color: var(--main-text-colour);
+}
+footer p{
+    text-align: center;
+    padding: 10px 10px;
 }
